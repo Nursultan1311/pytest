@@ -1,6 +1,11 @@
-import pytest
+import unittest
 
+class TestAddition(unittest.TestCase):
 
-def test_my_number():
-    number = 1100
-    assert 1000+99+1 == number
+    def test_addition(self):
+        result = 2 + 3
+        expected = 5
+        self.assertEqual(result, expected)
+
+if __name__ == '__main__':
+    unittest.main()
